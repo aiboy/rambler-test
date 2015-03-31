@@ -43,6 +43,9 @@ exports.blocks = [
         "name": "header"
     },
     {
+        "name": "test"
+    },
+    {
         "name": "content"
     },
     {

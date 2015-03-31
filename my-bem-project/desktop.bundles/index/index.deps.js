@@ -77,6 +77,9 @@ exports.deps = [
         "block": "header"
     },
     {
+        "block": "test"
+    },
+    {
         "block": "content"
     },
     {

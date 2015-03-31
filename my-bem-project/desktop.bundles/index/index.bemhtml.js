@@ -93,22 +93,22 @@ function applyc(__$ctx, __$ref) {
         return undefined;
     } else if (__$t === "") {
         if (__$ctx.ctx && __$ctx.ctx._vow && (__$ctx.__$a0 & 2097152) === 0) {
-            var __$r = __$b110(__$ctx, __$ref);
-            if (__$r !== __$ref) return __$r;
-        }
-        if (__$ctx.isSimple(__$ctx.ctx)) {
             var __$r = __$b111(__$ctx, __$ref);
             if (__$r !== __$ref) return __$r;
         }
-        if (!__$ctx.ctx) {
+        if (__$ctx.isSimple(__$ctx.ctx)) {
             var __$r = __$b112(__$ctx, __$ref);
             if (__$r !== __$ref) return __$r;
         }
-        if (__$ctx.isArray(__$ctx.ctx)) {
+        if (!__$ctx.ctx) {
             var __$r = __$b113(__$ctx, __$ref);
             if (__$r !== __$ref) return __$r;
         }
-        var __$r = __$b114(__$ctx, __$ref);
+        if (__$ctx.isArray(__$ctx.ctx)) {
+            var __$r = __$b114(__$ctx, __$ref);
+            if (__$r !== __$ref) return __$r;
+        }
+        var __$r = __$b115(__$ctx, __$ref);
         if (__$r !== __$ref) return __$r;
     }
 }
@@ -591,7 +591,7 @@ function __$b53(__$ctx, __$ref) {
     return attrs__$105;
 }
 
-function __$b93(__$ctx, __$ref) {
+function __$b94(__$ctx, __$ref) {
     var mods__$38 = $$mods;
     var __$r__$40;
     var __$l0__$41 = $$mode;
@@ -639,7 +639,7 @@ function __$b93(__$ctx, __$ref) {
     return;
 }
 
-function __$b94(__$ctx, __$ref) {
+function __$b95(__$ctx, __$ref) {
     var mods__$28 = $$mods, optionToMenuItem__$29 = function(option) {
         var res__$30 = {
             block: "menu-item",
@@ -700,7 +700,7 @@ function __$b94(__$ctx, __$ref) {
     return;
 }
 
-function __$b95(__$ctx, __$ref) {
+function __$b96(__$ctx, __$ref) {
     if (!$$mods.mode) throw Error("Can't build select without mode modifier");
     var ctx__$52 = __$ctx.ctx, isValDef__$53 = typeof ctx__$52.val !== "undefined", isModeCheck__$54 = $$mods.mode === "check", firstOption__$55, checkedOptions__$56 = [], containsVal__$57 = function(val) {
         return isValDef__$53 && (isModeCheck__$54 ? ctx__$52.val.indexOf(val) > -1 : ctx__$52.val === val);
@@ -738,7 +738,7 @@ function __$b95(__$ctx, __$ref) {
     return;
 }
 
-function __$b96(__$ctx, __$ref) {
+function __$b97(__$ctx, __$ref) {
     var ctx__$20 = __$ctx.ctx;
     var __$r__$22;
     var __$l0__$23 = $$mode;
@@ -776,7 +776,7 @@ function __$b96(__$ctx, __$ref) {
     return;
 }
 
-function __$b97(__$ctx, __$ref) {
+function __$b98(__$ctx, __$ref) {
     var url__$149 = __$ctx.ctx.url;
     var __$r__$151;
     var __$l0__$152 = $$mode;
@@ -800,7 +800,7 @@ function __$b97(__$ctx, __$ref) {
     return;
 }
 
-function __$b98(__$ctx, __$ref) {
+function __$b99(__$ctx, __$ref) {
     var ie__$157 = __$ctx.ctx.ie, hideRule__$158 = !ie__$157 ? [ "gt IE 9", "<!-->", "<!--" ] : ie__$157 === "!IE" ? [ ie__$157, "<!-->", "<!--" ] : [ ie__$157, "", "" ];
     var __$r__$160;
     var __$l0__$161 = $$mode;
@@ -817,7 +817,7 @@ function __$b98(__$ctx, __$ref) {
     return;
 }
 
-function __$b99(__$ctx, __$ref) {
+function __$b100(__$ctx, __$ref) {
     var ctx__$142 = __$ctx.ctx;
     typeof ctx__$142.url === "object" && (ctx__$142.url = __$ctx.reapply(ctx__$142.url));
     var __$r__$144;
@@ -828,7 +828,7 @@ function __$b99(__$ctx, __$ref) {
     return;
 }
 
-function __$b100(__$ctx, __$ref) {
+function __$b101(__$ctx, __$ref) {
     var ctx__$121 = __$ctx.ctx, mods__$122 = $$mods, firstItem__$123, checkedItems__$124 = [];
     if (ctx__$121.content) {
         var isValDef__$125 = typeof ctx__$121.val !== "undefined", containsVal__$126 = function(val) {
@@ -867,7 +867,7 @@ function __$b100(__$ctx, __$ref) {
     return;
 }
 
-function __$b101(__$ctx, __$ref) {
+function __$b102(__$ctx, __$ref) {
     var __$r__$100;
     var __$l0__$101 = __$ctx._input;
     __$ctx._input = __$ctx.ctx;
@@ -881,7 +881,7 @@ function __$b101(__$ctx, __$ref) {
     return;
 }
 
-function __$b102(__$ctx, __$ref) {
+function __$b103(__$ctx, __$ref) {
     var mods__$116 = $$mods;
     mods__$116.theme = mods__$116.theme || __$ctx._menuMods.theme;
     mods__$116.disabled = mods__$116.disabled || __$ctx._menuMods.disabled;
@@ -893,7 +893,7 @@ function __$b102(__$ctx, __$ref) {
     return;
 }
 
-function __$b103(__$ctx, __$ref) {
+function __$b104(__$ctx, __$ref) {
     var BEM_INTERNAL__$165 = __$ctx.BEM.INTERNAL, ctx__$166 = __$ctx.ctx, isBEM__$167, tag__$168, res__$169;
     var __$r__$171;
     var __$l0__$172 = __$ctx._str;
@@ -1049,7 +1049,7 @@ function __$b103(__$ctx, __$ref) {
     return;
 }
 
-function __$b110(__$ctx, __$ref) {
+function __$b111(__$ctx, __$ref) {
     var __$r__$219;
     var __$l0__$220 = $$mode;
     $$mode = "";
@@ -1066,7 +1066,7 @@ function __$b110(__$ctx, __$ref) {
     return;
 }
 
-function __$b111(__$ctx, __$ref) {
+function __$b112(__$ctx, __$ref) {
     __$ctx._listLength--;
     var ctx__$225 = __$ctx.ctx;
     if (ctx__$225 && ctx__$225 !== true || ctx__$225 === 0) {
@@ -1075,12 +1075,12 @@ function __$b111(__$ctx, __$ref) {
     return;
 }
 
-function __$b112(__$ctx, __$ref) {
+function __$b113(__$ctx, __$ref) {
     __$ctx._listLength--;
     return;
 }
 
-function __$b113(__$ctx, __$ref) {
+function __$b114(__$ctx, __$ref) {
     var ctx__$226 = __$ctx.ctx, len__$227 = ctx__$226.length, i__$228 = 0, prevPos__$229 = __$ctx.position, prevNotNewList__$230 = __$ctx._notNewList;
     if (prevNotNewList__$230) {
         __$ctx._listLength += len__$227 - 1;
@@ -1101,7 +1101,7 @@ function __$b113(__$ctx, __$ref) {
     return;
 }
 
-function __$b114(__$ctx, __$ref) {
+function __$b115(__$ctx, __$ref) {
     __$ctx.ctx || (__$ctx.ctx = {});
     var vBlock__$234 = __$ctx.ctx.block, vElem__$235 = __$ctx.ctx.elem, block__$236 = __$ctx._currBlock || $$block;
     var __$r__$238;
@@ -1622,6 +1622,10 @@ function __$g3(__$ctx, __$ref) {
         if (!$$elem) {
             return "i";
         }
+    } else if (__$t === "test") {
+        if (!$$elem) {
+            return "lol";
+        }
     } else if (__$t === "ua") {
         if (!$$elem) {
             return "script";
@@ -1637,22 +1641,22 @@ function __$g4(__$ctx, __$ref) {
         var __$t = $$elem;
         if (__$t === "button") {
             if ((__$ctx.__$a0 & 64) === 0) {
-                var __$r = __$b93(__$ctx, __$ref);
+                var __$r = __$b94(__$ctx, __$ref);
                 if (__$r !== __$ref) return __$r;
             }
         } else if (__$t === "menu") {
             if ((__$ctx.__$a0 & 32) === 0) {
-                var __$r = __$b94(__$ctx, __$ref);
+                var __$r = __$b95(__$ctx, __$ref);
                 if (__$r !== __$ref) return __$r;
             }
         }
         if (!$$elem && !__$ctx._select && (__$ctx.__$a0 & 256) === 0) {
-            var __$r = __$b95(__$ctx, __$ref);
+            var __$r = __$b96(__$ctx, __$ref);
             if (__$r !== __$ref) return __$r;
         }
     } else if (__$t === "page") {
         if (!$$elem && (__$ctx.__$a0 & 16) === 0) {
-            var __$r = __$b96(__$ctx, __$ref);
+            var __$r = __$b97(__$ctx, __$ref);
             if (__$r !== __$ref) return __$r;
         }
         var __$t = $$elem;
@@ -1662,36 +1666,36 @@ function __$g4(__$ctx, __$ref) {
                 var __$t = __$ctx.ctx.hasOwnProperty("ie");
                 if (__$t) {
                     if (__$ctx.ctx.ie === true && (__$ctx.__$a0 & 1048576) === 0) {
-                        var __$r = __$b97(__$ctx, __$ref);
+                        var __$r = __$b98(__$ctx, __$ref);
                         if (__$r !== __$ref) return __$r;
                     }
-                    var __$r = __$b98(__$ctx, __$ref);
+                    var __$r = __$b99(__$ctx, __$ref);
                     if (__$r !== __$ref) return __$r;
                 }
             }
         }
     } else if (__$t === "link") {
         if (!$$elem && (__$ctx.__$a0 & 262144) === 0) {
-            var __$r = __$b99(__$ctx, __$ref);
+            var __$r = __$b100(__$ctx, __$ref);
             if (__$r !== __$ref) return __$r;
         }
     } else if (__$t === "menu") {
         if (!$$elem && (__$ctx.__$a0 & 65536) === 0) {
-            var __$r = __$b100(__$ctx, __$ref);
+            var __$r = __$b101(__$ctx, __$ref);
             if (__$r !== __$ref) return __$r;
         }
     } else if (__$t === "input") {
         if (!$$elem && (__$ctx.__$a0 & 2048) === 0) {
-            var __$r = __$b101(__$ctx, __$ref);
+            var __$r = __$b102(__$ctx, __$ref);
             if (__$r !== __$ref) return __$r;
         }
     } else if (__$t === "menu-item") {
         if (!$$elem && __$ctx._menuMods && (__$ctx.__$a0 & 32768) === 0) {
-            var __$r = __$b102(__$ctx, __$ref);
+            var __$r = __$b103(__$ctx, __$ref);
             if (__$r !== __$ref) return __$r;
         }
     }
-    var __$r = __$b103(__$ctx, __$ref);
+    var __$r = __$b104(__$ctx, __$ref);
     if (__$r !== __$ref) return __$r;
     return __$ref;
 };

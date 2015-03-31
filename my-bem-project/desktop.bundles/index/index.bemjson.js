@@ -17,6 +17,9 @@
             ]
         },
         {
+            block: 'test'
+        },
+        {
             block : 'content',
             content : [
                 {

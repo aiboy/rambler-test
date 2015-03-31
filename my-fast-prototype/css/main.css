@@ -1,0 +1,21 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: red;
+}
+
+.prototype-example {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/exercise.png);
+    width: 1332px;
+    height: 2367px;
+}
+
+.prototype {
+    background: blue;
+    width: 1332px;
+    height: 2367px;
+    opacity: 0.3;
+}
