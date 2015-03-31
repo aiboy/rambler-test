@@ -1,51 +1,33 @@
 body {
     padding: 0;
     margin: 0;
-    background: red;
     font-family: Arial, serif;
 }
-
-.prototype-example {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(../img/exercise.png);
-    width: 1332px;
-    height: 2367px;
-}
-
 .prototype {
-    background: blue;
-    width: 1332px;
-    height: 2367px;
-    opacity: 0.3;
-    position: relative;
 }
 .header-wrapper {
-    background: red;
     height: 120px;
     overflow: hidden;
+    background: #363f48;
 }
 .header {
     width: 72%;
-
-    background: black;
     margin: 0 auto;
     display: table;
 }
 .logo {
     width: 190px;
     height: 120px;
-    background: aquamarine;
     display: table-cell;
     vertical-align: middle;
 }
 .logo__image {
+    width: 173px;
     
+    height: 50px;
+    margin-left: 10px;
 }
 .menu {
-    
-
     display: table-cell;
 
     vertical-align: middle;
@@ -53,52 +35,44 @@ body {
     text-align: end;
     color: white;
     font-size: 13px;
-    padding: 0;
-    padding-right: 7px;
+    padding: 0 7px 0 0;
 }
 .menu__item {
     display: inline;
+    cursor: pointer;
 
-    margin: 0px 13px;
+    margin: 0 13px;
 }
 .login-container {
-    
-    
-
     display: table-cell;
-
     width: 184px;
     vertical-align: middle;
-    background: aliceblue;
-    padding: 0;
     font-size: 13px;
 }
 .login-container__login {
     display: inline-block;
-
+    color: lightgray;
     padding: 10px 17px;
+    cursor: pointer;
     margin: 4px;
 }
 .login-container__singup {
     display: inline-block;
-
-    background: green;
+    color: white;
     padding: 10px 17px;
+    cursor: pointer;
+    background: green;
     margin: 4px;
     border-radius: 3px;
 }
 .article-wrapper {
-    background: yellow;
-
     width: 72%;
     margin: 0 auto;
-    /* position: relative; */
 }
 .article-wrapper__clear {
     clear: both;
 }
 .article {
-    background: antiquewhite;
     margin-right: 240px;
 
     padding: 36px 10px 10px 10px;
@@ -116,21 +90,18 @@ body {
     line-height: 26px;
 }
 .article__by {
-    color: green;
-
     cursor: pointer;
+    color: green;
 }
 .article__date {
 
 }
 .article__comments {
     color: green;
-
 }
 .article__promo {
-    background: red;
-
     height: 292px;
+    background: gray;
     margin-top: 20px;
 }
 .article__text {
@@ -145,13 +116,11 @@ body {
 .aside-container {
     float: right;
 
-    background: aquamarine;
     width: 240px;
     padding: 48px 10px 10px 10px;
     box-sizing: border-box;
 }
 .categories {
-
     margin-bottom: 32px;
 }
 .categories__header {
@@ -161,7 +130,7 @@ body {
     margin-bottom: 16px;
 }
 .category {
-    margin: 11px 0px;
+    margin: 11px 0;
 
 }
 .text-widget {
@@ -170,10 +139,9 @@ body {
 }
 .text-widget__header {
     font-size: 20px;   font-weight: bold;   margin-bottom: 16px;
-
 }
 .text-widget__paragraph {
-    font-size: 15px;
+    font-size: 16px;
     
     line-height: 22px;
 }
@@ -190,17 +158,12 @@ body {
 }
 .comments-wrapper {
     width: 100%;
-
-    /* padding-right: 300px; */
-    background: red;
+    margin-bottom: 60px;
 }
 .comments-container-section {
-    /* width: 100%; */
-
     margin-right: 240px;
     padding: 10px;
     box-sizing: border-box;
-    background: darksalmon;
 }
 .comments-container-section__count {
     font-size: 20px;
@@ -213,12 +176,8 @@ body {
 }
 .contents-form {
     max-width: 700px;
-
-    background: beige;
 }
 .contents-form__full-name {
-    background: red;
-
     height: 43px;
     width: 48%;
     border: 1px solid black;
@@ -227,24 +186,29 @@ body {
     margin-bottom: 15px;
 }
 .contents-form__email {
-    background: red;   height: 43px;   width: 48%;   border: 1px solid black;   border-radius: 2px;   
+    height: 43px;   width: 48%;
+    border: 1px solid black;
+    border-radius: 2px;
     float: right;
 
     margin-bottom: 15px;
 }
 .contents-form__message {
-    background: red;   
-    height: 114px;      border: 1px solid black;   border-radius: 2px;   
+    height: 114px;
+    border: 1px solid black;
+    border-radius: 2px;
 
     clear: both;
     margin-bottom: 15px;
 }
 .contents-form__submit {
     float: right;
+    cursor: pointer;
+
+    background: green;
 
     width: 240px;
     height: 60px;
-    background: green;
     text-align: center;
     color: white;
     font-size: 21px;
@@ -256,15 +220,8 @@ body {
     
 }
 .comments-container {
-    /* background: aquamarine; */
-
-    height: 456px;
 }
 .comment {
-    background: aqua;
-
-    margin: 1px 0;
-    /* height: 178px; */
     padding-left: 78px;
     position: relative;
     padding-top: 37px;
@@ -285,15 +242,11 @@ body {
     left: 0;
 }
 .comment__profile-image {
-    /* margin-top: 0px; */
-
     width: 60px;
-    background: red;
     height: 60px;
 }
 .comment__full-name {
     font-size: 20px;
-
     margin-bottom: 4px;
 }
 .comment__message {
@@ -303,24 +256,25 @@ body {
 }
 .comment__time {
     display: inline-block;
+    color: gray;
 
     font-size: 13px;
 }
 .comment__reply {
     display: inline-block;
+    color: green;
 
     font-size: 13px;
-    color: green;
     cursor: pointer;
 }
 .comment__clear {
     clear: both;
 }
 .footer-wrapper {
+    background: #262e34;
     height: 295px;
-
-    background: red;
 }
 .footer {
-
+    color: white;
+    padding: 10px;
 }
