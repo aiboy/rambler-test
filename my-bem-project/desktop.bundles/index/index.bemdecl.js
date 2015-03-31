@@ -40,41 +40,22 @@ exports.blocks = [
         ]
     },
     {
+        "name": "main"
+    },
+    {
+        "name": "header-wrapper"
+    },
+    {
         "name": "header"
     },
     {
-        "name": "test"
+        "name": "logo"
     },
     {
-        "name": "content"
-    },
-    {
-        "name": "link"
-    },
-    {
-        "name": "table"
-    },
-    {
-        "name": "table",
+        "name": "logo",
         "elems": [
             {
-                "name": "row"
-            }
-        ]
-    },
-    {
-        "name": "table",
-        "elems": [
-            {
-                "name": "title"
-            }
-        ]
-    },
-    {
-        "name": "table",
-        "elems": [
-            {
-                "name": "cell"
+                "name": "image"
             }
         ]
     },
@@ -83,282 +64,235 @@ exports.blocks = [
     },
     {
         "name": "menu",
-        "mods": [
-            {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "menu",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "s"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "menu-item"
-    },
-    {
-        "name": "menu-item",
-        "mods": [
-            {
-                "name": "disabled",
-                "vals": [
-                    {
-                        "name": true
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "menu",
         "elems": [
             {
-                "name": "group"
+                "name": "item"
             }
         ]
     },
     {
-        "name": "menu",
-        "mods": [
+        "name": "login-container"
+    },
+    {
+        "name": "login-container",
+        "elems": [
             {
-                "name": "mode",
-                "vals": [
-                    {
-                        "name": "check"
-                    }
-                ]
+                "name": "login"
             }
         ]
     },
     {
-        "name": "menu-item",
-        "mods": [
+        "name": "login-container",
+        "elems": [
             {
-                "name": "checked",
-                "vals": [
-                    {
-                        "name": true
-                    }
-                ]
+                "name": "singup"
             }
         ]
     },
     {
-        "name": "icon"
+        "name": "article-wrapper"
     },
     {
-        "name": "icon",
-        "mods": [
+        "name": "aside-container"
+    },
+    {
+        "name": "categories"
+    },
+    {
+        "name": "categories",
+        "elems": [
             {
-                "name": "social",
-                "vals": [
-                    {
-                        "name": "twitter"
-                    }
-                ]
+                "name": "header"
             }
         ]
     },
     {
-        "name": "icon",
-        "mods": [
+        "name": "category"
+    },
+    {
+        "name": "text-widget"
+    },
+    {
+        "name": "text-widget",
+        "elems": [
             {
-                "name": "social",
-                "vals": [
-                    {
-                        "name": "vk"
-                    }
-                ]
+                "name": "header"
             }
         ]
     },
     {
-        "name": "menu",
-        "mods": [
+        "name": "text-widget",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
+                "name": "paragraph"
             }
         ]
     },
     {
-        "name": "menu",
-        "mods": [
+        "name": "archives"
+    },
+    {
+        "name": "archives",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
+                "name": "header"
             }
         ]
     },
     {
-        "name": "menu",
-        "mods": [
+        "name": "archives",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xl"
-                    }
-                ]
+                "name": "monthyear"
             }
         ]
     },
     {
-        "name": "line"
+        "name": "article"
     },
     {
-        "name": "line",
-        "mods": [
+        "name": "article",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "s"
-                    }
-                ]
+                "name": "header"
             }
         ]
     },
     {
-        "name": "input"
-    },
-    {
-        "name": "input",
-        "mods": [
+        "name": "article",
+        "elems": [
             {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
+                "name": "extra"
             }
         ]
     },
     {
-        "name": "input",
-        "mods": [
+        "name": "article",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "s"
-                    }
-                ]
+                "name": "by"
             }
         ]
     },
     {
-        "name": "input",
-        "mods": [
+        "name": "article",
+        "elems": [
             {
-                "name": "has-clear",
-                "vals": [
-                    {
-                        "name": true
-                    }
-                ]
+                "name": "date"
             }
         ]
     },
     {
-        "name": "button"
-    },
-    {
-        "name": "button",
-        "mods": [
+        "name": "article",
+        "elems": [
             {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
+                "name": "comments"
             }
         ]
     },
     {
-        "name": "button",
-        "mods": [
+        "name": "article",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "s"
-                    }
-                ]
+                "name": "promo"
             }
         ]
     },
     {
-        "name": "icon",
-        "mods": [
+        "name": "article",
+        "elems": [
             {
-                "name": "action",
-                "vals": [
-                    {
-                        "name": "download"
-                    }
-                ]
+                "name": "text"
             }
         ]
     },
     {
-        "name": "spin"
-    },
-    {
-        "name": "spin",
-        "mods": [
+        "name": "article",
+        "elems": [
             {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
+                "name": "paragraph"
             }
         ]
     },
     {
-        "name": "spin",
-        "mods": [
+        "name": "article-wrapper",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xs"
-                    }
-                ]
+                "name": "clear"
             }
         ]
     },
     {
-        "name": "spin",
+        "name": "comments-wrapper"
+    },
+    {
+        "name": "comments-container-section"
+    },
+    {
+        "name": "comments-container-section",
+        "elems": [
+            {
+                "name": "count"
+            }
+        ]
+    },
+    {
+        "name": "comments-form-container"
+    },
+    {
+        "name": "contents-form"
+    },
+    {
+        "name": "contents-form",
+        "elems": [
+            {
+                "name": "full-name"
+            }
+        ]
+    },
+    {
+        "name": "contents-form",
+        "elems": [
+            {
+                "name": "email"
+            }
+        ]
+    },
+    {
+        "name": "contents-form",
+        "elems": [
+            {
+                "name": "message"
+            }
+        ]
+    },
+    {
+        "name": "contents-form",
+        "elems": [
+            {
+                "name": "submit"
+            }
+        ]
+    },
+    {
+        "name": "contents-form",
+        "elems": [
+            {
+                "name": "clear"
+            }
+        ]
+    },
+    {
+        "name": "comments-container"
+    },
+    {
+        "name": "comment"
+    },
+    {
+        "name": "comment",
         "mods": [
             {
-                "name": "visible",
+                "name": "level-0",
                 "vals": [
                     {
                         "name": true
@@ -368,288 +302,66 @@ exports.blocks = [
         ]
     },
     {
-        "name": "radio-group"
-    },
-    {
-        "name": "radio-group",
-        "mods": [
+        "name": "comment",
+        "elems": [
             {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
+                "name": "avatar"
             }
         ]
     },
     {
-        "name": "radio-group",
-        "mods": [
+        "name": "comment",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "s"
-                    }
-                ]
+                "name": "profile-image"
             }
         ]
     },
     {
-        "name": "radio-group",
-        "mods": [
+        "name": "comment",
+        "elems": [
             {
-                "name": "type",
-                "vals": [
-                    {
-                        "name": "button"
-                    }
-                ]
+                "name": "full-name"
             }
         ]
     },
     {
-        "name": "checkbox"
-    },
-    {
-        "name": "checkbox",
-        "mods": [
+        "name": "comment",
+        "elems": [
             {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
+                "name": "message"
             }
         ]
     },
     {
-        "name": "checkbox",
-        "mods": [
+        "name": "comment",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "s"
-                    }
-                ]
+                "name": "time"
             }
         ]
     },
     {
-        "name": "checkbox",
-        "mods": [
+        "name": "comment",
+        "elems": [
             {
-                "name": "type",
-                "vals": [
-                    {
-                        "name": "button"
-                    }
-                ]
+                "name": "reply"
             }
         ]
     },
     {
-        "name": "dropdown"
-    },
-    {
-        "name": "dropdown",
-        "mods": [
+        "name": "comment",
+        "elems": [
             {
-                "name": "switcher",
-                "vals": [
-                    {
-                        "name": "button"
-                    }
-                ]
+                "name": "clear"
             }
         ]
     },
     {
-        "name": "dropdown",
+        "name": "comment",
         "mods": [
             {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "dropdown",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "s"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "popup"
-    },
-    {
-        "name": "popup",
-        "mods": [
-            {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "select"
-    },
-    {
-        "name": "select",
-        "mods": [
-            {
-                "name": "mode",
-                "vals": [
-                    {
-                        "name": "radio-check"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "select",
-        "mods": [
-            {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "select",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "s"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "spin",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "s"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "line",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "input",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "button",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "radio-group",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "radio"
-    },
-    {
-        "name": "radio",
-        "mods": [
-            {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "radio",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "radio",
-        "mods": [
-            {
-                "name": "checked",
+                "name": "level-1",
                 "vals": [
                     {
                         "name": true
@@ -659,290 +371,7 @@ exports.blocks = [
         ]
     },
     {
-        "name": "checkbox",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "checkbox",
-        "mods": [
-            {
-                "name": "checked",
-                "vals": [
-                    {
-                        "name": true
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "dropdown",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "select",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "spin",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "line",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "input",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "button",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "radio-group",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "radio",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "checkbox",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "dropdown",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "select",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "spin",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "line",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xl"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "input",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xl"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "button",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xl"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "radio-group",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xl"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "checkbox",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xl"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "dropdown",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xl"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "select",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xl"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "spin",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xl"
-                    }
-                ]
-            }
-        ]
+        "name": "footer-wrapper"
     },
     {
         "name": "footer"

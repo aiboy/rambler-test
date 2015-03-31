@@ -1,491 +1,193 @@
 ({
-    block : 'page',
-    title : 'Title of the page',
-    favicon : '/favicon.ico',
-    head : [
+    block: 'page',
+    title: 'Rambler test app',
+    favicon: '/favicon.ico',
+    head: [
         { elem : 'meta', attrs : { name : 'description', content : '' } },
         { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
         { elem : 'css', url : '_index.css' }
     ],
     scripts: [{ elem : 'js', url : '_index.js' }],
-    mods : { theme : 'islands' },
-    content : [
+    mods: { theme : 'islands' },
+    content: [
         {
-            block : 'header',
-            content : [
-                'header content goes here'
-            ]
-        },
-        {
-            block: 'test'
-        },
-        {
-            block : 'content',
-            content : [
+            block: 'main',
+            content: [
                 {
-                    tag : 'p',
-                    content : [
-                        'This is a demo page to show blocks from bem-components library. ',
-                        { tag : 'br' },
-                        'Feel free to replace it with your own content in desktop.bundles/index/index.bemjson.js.',
-                        { tag : 'br' },
-                        'For more info about BEM check out ',
-                        {
-                            block : 'link',
-                            url : 'http://bem.info/',
-                            content : 'bem.info'
-                        },
-                        '.'
-                    ]
+                    block: 'header-wrapper',
+                    content: {
+                        block: 'header',
+                        content: [
+                            {
+                                block: 'logo',
+                                content: { elem: 'image' }
+                            },
+                            {
+                                block: 'menu',
+                                content: [
+                                    { elem: 'item', content:'HOME' },
+                                    { elem: 'item', content: 'FEATURES' },
+                                    { elem: 'item', content: 'TESTIMONIALS' },
+                                    { elem: 'item', content: 'PRICING' },
+                                    { elem: 'item', content: 'CONTACT' }
+                                ]
+                            },
+                            {
+                                block: 'login-container',
+                                content: [
+                                    { elem: 'login', content: 'LOGIN' },
+                                    { elem: 'singup', content: 'SINGUP' }
+                                ]
+                            }
+                        ]
+                    }
                 },
-                { tag : 'h2', content : 'islands theme' },
 
                 {
-                    block : 'table',
-                    tag : 'table',
-                    attrs : { style : 'table-layout: fixed; width: 600px' },
-                    content : [
+                    block: 'article-wrapper',
+                    content: [
                         {
-                            elem : 'row',
-                            tag : 'tr',
-                            content : [
-                                { elem : 'title', tag : 'th', content : 'size s' },
-                                { elem : 'title', tag : 'th', content : 'size m' },
-                                { elem : 'title', tag : 'th', content : 'size l' },
-                                { elem : 'title', tag : 'th', content : 'size xl' }
+                            block: 'aside-container',
+                            content: [
+                                {
+                                    block: 'categories',
+                                    content: [
+                                        { elem: 'header', content: 'Categories' },
+                                        { block: 'category', content: 'Dedicated Servers' },
+                                        { block: 'category', content: 'Managed Hosting' },
+                                        { block: 'category', content: 'News and Updates' },
+                                        { block: 'category', content: 'New Features' },
+                                        { block: 'category', content: 'Domain Registration' },
+                                        { block: 'category', content: 'Server Location' }
+                                    ]
+                                },
+                                {
+                                    block: 'text-widget',
+                                    content: [
+                                        { elem: 'header', content: 'Text Widget' },
+                                        { elem: 'paragraph', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor.' },
+                                        { elem: 'paragraph', content: 'Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit.' }
+                                    ]
+                                },
+                                {
+                                    block: 'archives',
+                                    content: [
+                                        { elem: 'header', content: 'Archieves' },
+                                        { elem: 'monthyear', content: 'May 2013' },
+                                        { elem: 'monthyear', content: 'April 2013' },
+                                        { elem: 'monthyear', content: 'March 2013' },
+                                        { elem: 'monthyear', content: 'February 2013' },
+                                        { elem: 'monthyear', content: 'January 2013' },
+                                        { elem: 'monthyear', content: 'December 2012' },
+                                        { elem: 'monthyear', content: 'November 2012' },
+                                        { elem: 'monthyear', content: 'October 2012' },
+                                        { elem: 'monthyear', content: 'September 2012' },
+                                        { elem: 'monthyear', content: 'August 2012' }
+                                    ]
+                                }
                             ]
                         },
                         {
-                            elem : 'row',
-                            tag : 'tr',
-                            content : [
-                                { elem : 'cell', tag : 'td', size : 's' },
-                                { elem : 'cell', tag : 'td', size : 'm' },
-                                { elem : 'cell', tag : 'td', size : 'l' },
-                                { elem : 'cell', tag : 'td', size : 'xl' }
-                            ].map(function(cell) {
-                                cell.attrs = { style : 'width: 25%; vertical-align: top;' };
-                                cell.content = [
-                                    {
-                                        block : 'menu',
-                                        mods : { theme : 'islands', size : cell.size },
-                                        attrs : { style : 'border: 1px solid rgba(0, 0, 0, 0.1);' },
-                                        content : [
-                                            {
-                                                block : 'menu-item',
-                                                content : 'New'
-                                            },
-                                            {
-                                                block : 'menu-item',
-                                                mods : { disabled : true },
-                                                content : 'Open Recent'
-                                            },
-                                            {
-                                                elem : 'group',
-                                                title : 'Save',
-                                                content : [
-                                                    {
-                                                        block : 'menu-item',
-                                                        content : 'Save as...'
-                                                    },
-                                                    {
-                                                        block : 'menu-item',
-                                                        content : 'Export'
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                block : 'menu-item',
-                                                content : 'Close'
-                                            }
-                                        ]
-                                    },
-                                    { tag : 'br' },
-                                    {
-                                        block : 'menu',
-                                        mods : { mode : 'check', theme : 'islands', size : cell.size },
-                                        attrs : { style : 'border: 1px solid rgba(0, 0, 0, 0.1);' },
-                                        content : [
-                                            {
-                                                elem : 'group',
-                                                title : 'Automate',
-                                                content : [
-                                                    {
-                                                        block : 'menu-item',
-                                                        content : 'Batch'
-                                                    },
-                                                    {
-                                                        block : 'menu-item',
-                                                        content : 'Create Droplet'
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                elem : 'group',
-                                                content : [
-                                                    {
-                                                        block : 'menu-item',
-                                                        mods : { checked : true },
-                                                        content : [
-                                                            { block : 'icon', mods : { social : 'twitter' } },
-                                                            'Twitter'
-                                                        ]
-                                                    },
-                                                    {
-                                                        block : 'menu-item',
-                                                        content : [
-                                                            { block : 'icon', mods : { social : 'vk' } },
-                                                            'VK'
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ];
-                                return cell;
-                            })
+                            block: 'article',
+                            content: [
+                                { elem: 'header', content: 'Managed Hosting vs Dedicated Hosting' },
+                                {
+                                    elem: 'extra',
+                                    content: [
+                                        'Posted by ',
+                                        { elem: 'by', content: 'Surjith SM' },
+                                        ' on ',
+                                        { elem: 'date', content: '17 Jul 2013' },
+                                        '. ',
+                                        { elem: 'comments', attrs: { href: '#' }, content: '16 comments' }
+                                    ]
+                                },
+                                { elem: 'promo' },
+                                {
+                                    elem: 'text',
+                                    content: [
+                                        { elem: 'paragraph', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac hendrerit nunc luctus. Etiam adipiscing et sapien a accumsan. Integer gravida vestibulum eros at elementum. Maecenas a velit hendrerit, tristique tortor lacinia, vehicula sapien. Cras cursus sodales posuere. Sed viverra mi mauris, at dapibus orci varius non.' },
+                                        { elem: 'paragraph', content: 'Sed adipiscing faucibus quam, at mollis sapien imperdiet at. Curabitur fringilla eget augue id ullamcorper. Pellentesque et pretium nisl, sit amet condimentum diam. Sed tempor scelerisque magna ut volutpat. Duis laoreet tellus non ipsum vestibulum bibendum. Duis ac leo urna. Suspendisse accumsan erat sed ligula pellentesque tristique. Maecenas volutpat felis libero, eget pretium ipsum condimentum sit amet. Aenean nec fermentum metus. Integer laoreet lectus adipiscing ante molestie, a viverra enim vulputate. Donec ut porta elit. Vestibulum tristique pellentesque quam in euismod. Duis facilisis feugiat rhoncus. Nulla quis diam congue, vulputate nibh et, placerat erat. Proin et enim eleifend, pharetra sem in, adipiscing sapien.' },
+                                        { elem: 'paragraph', content: 'Sed ultricies ullamcorper risus non interdum. Nam sapien quam, ultricies vitae erat id, pretium pellentesque risus. Sed blandit quam sed ante elementum malesuada. Ut placerat sem augue, a sollicitudin ligula suscipit id. Praesent fringilla metus ac quam suscipit, hendrerit viverra arcu ornare. Nunc fringilla, odio non consequat molestie, mi magna egestas magna, et tincidunt urna ante ut leo. Vivamus arcu mauris, vulputate sed varius posuere, volutpat ut nisl. Quisque vitae risus sem. Duis eget facilisis arcu, a gravida dolor.' },
+                                        { elem: 'paragraph', content: 'Donec fringilla massa in imperdiet pretium. Etiam vel ligula sagittis, consectetur est at, mattis nibh. Aliquam dignissim consequat sapien id eleifend. Integer tincidunt vitae sapien vel semper. Mauris vitae suscipit sapien. Etiam imperdiet tempus eros in facilisis. Cras quis dolor ultrices, vehicula mi vel, sollicitudin orci. Nunc a elementum lectus, sed blandit elit. Phasellus sapien arcu, luctus sed nibh eget, pharetra ullamcorper dui. Maecenas eget massa ut felis lobortis cursus et id lacus. Nullam laoreet metus ac leo elementum semper. Ut laoreet arcu vel tellus vehicula convallis. Phasellus augue elit, tincidunt sit amet dolor eu, gravida egestas nibh. Sed velit ipsum, accumsan' }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'clear'
+                        },
+                        {
+                            block: 'comments-wrapper',
+                            content: [
+                                {
+                                    block: 'comments-container-section',
+                                    content: [
+                                        { elem: 'count', content: '110 Comments' },
+                                        {
+                                            block: 'comments-form-container',
+                                            content: [
+                                                {
+                                                    block: 'contents-form',
+                                                    content: [
+                                                        { elem: 'full-name' },
+                                                        { elem: 'email' },
+                                                        { elem: 'message' },
+                                                        { elem: 'submit', content: 'Submit Content' },
+                                                        { elem: 'clear' }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'comments-container',
+                                            content: [
+                                                {
+                                                    block: 'comment',
+                                                    mods: { 'level-0': true },
+                                                    content: [
+                                                        {
+                                                            elem: 'avatar',
+                                                            content: { elem: 'profile-image' }
+                                                        },
+                                                        { elem: 'full-name', content: 'Michael' },
+                                                        { elem: 'message', content: 'Donec fringilla massa in imperdiet pretium. Etiam vel ligula sagittis, consectetur est at, mattis nibh. Aliquam dignissim consequat sapien id eleifend. Integer tincidunt vitae sapien vel semper. Mauris vitae suscipit sapien. Etiam imperdiet tempus eros in facilisis. Cras quis dolor ultrices, vehicula mi vel, sollicitudin orci. ' },
+                                                        { elem: 'time', content: '10 minutes ago.' },
+                                                        { elem: 'reply', content: 'Reply' },
+                                                        { elem: 'clear' }
+                                                    ]
+                                                },
+                                                {
+                                                    block: 'comment',
+                                                    mods: { 'level-1': true },
+                                                    content: [
+                                                        {
+                                                            elem: 'avatar',
+                                                            content: { elem: 'profile-image' }
+                                                        },
+                                                        { elem: 'full-name', content: 'Sara' },
+                                                        { elem: 'message', content: 'Donec fringilla massa in imperdiet pretium. Etiam vel ligula sagittis, consectetur est at, mattis nibh. Aliquam dignissim consequat sapien id eleifend. Integer tincidunt vitae sapien vel semper. Mauris vitae suscipit sapien. Etiam imperdiet tempus eros in facilisis. Cras quis dolor ultrices, vehicula mi vel, sollicitudin orci. ' },
+                                                        { elem: 'time', content: '10 minutes ago.' },
+                                                        { elem: 'reply', content: ' Reply' },
+                                                        { elem: 'clear' }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
 
-                { tag : 'br' },
-
                 {
-                    block : 'line',
-                    mods : { size : 's' },
-                    content : [
-                        'size s (24px height) ',
-                        {
-                            block : 'input',
-                            mods : { theme : 'islands', size : 's', 'has-clear' : true },
-                            val : 'value',
-                            placeholder : 'placeholder'
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 's' },
-                            text : 'button'
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 's' },
-                            text : 'button',
-                            icon : { block : 'icon', mods : { action : 'download' } }
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 's' },
-                            icon : { block : 'spin', mods : { theme : 'islands', size : 'xs', visible : true } },
-                            text : 'Loading...'
-                        },
-                        ' ',
-                        {
-                            block : 'radio-group',
-                            mods : { theme : 'islands', size : 's', type : 'button' },
-                            name : 'radio-sizes-s',
-                            options : [
-                                { val : 1, text : 'first' },
-                                { val : 2, text : 'second', checked : true }
-                            ]
-                        },
-                        ' ',
-                        {
-                            block : 'checkbox',
-                            mods : { theme : 'islands', size : 's', type : 'button' },
-                            val : 1,
-                            text : 'check'
-                        },
-                        ' ',
-                        {
-                            block : 'dropdown',
-                            mods : { switcher : 'button', theme : 'islands', size : 's' },
-                            switcher : 'dropdown',
-                            popup : { block : 'popup', mods : { theme : 'islands' }, content : 'popup' }
-                        },
-                        ' ',
-                        {
-                            block : 'select',
-                            mods : { mode : 'radio-check', theme : 'islands', size : 's' },
-                            name : 'select',
-                            text : 'first',
-                            options : [
-                                { val : 1, text : 'first', checked: true },
-                                { val : 2, text : 'second' }
-                            ]
-                        },
-                        ' ',
-                        {
-                            block : 'spin',
-                            mods : { theme : 'islands', size : 's', visible : true }
-                        }
-                    ]
-                },
-
-                { tag : 'br' },
-
-                {
-                    block : 'line',
-                    mods : { size : 'm' },
-                    content : [
-                        'size m (28px height) ',
-                        {
-                            block : 'input',
-                            mods : { theme : 'islands', size : 'm', 'has-clear' : true },
-                            val : 'value',
-                            placeholder : 'placeholder'
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 'm' },
-                            text : 'button'
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 'm' },
-                            text : 'button',
-                            icon : { block : 'icon', mods : { action : 'download' } }
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 'm' },
-                            icon : { block : 'spin', mods : { theme : 'islands', size : 's', visible : true } },
-                            text : 'Loading...'
-                        },
-                        ' ',
-                        {
-                            block : 'radio-group',
-                            mods : { theme : 'islands', size : 'm', type : 'button' },
-                            name : 'radio-sizes-m',
-                            options : [
-                                { val : 1, text : 'first' },
-                                { val : 2, text : 'second', checked : true }
-                            ]
-                        },
-                        ' ',
-                        {
-                            block : 'radio',
-                            mods : { theme : 'islands', size : 'm', checked : true },
-                            val : 1,
-                            text : 'radio'
-                        },
-                        ' ',
-                        {
-                            block : 'checkbox',
-                            mods : { theme : 'islands', size : 'm', checked : true },
-                            val : 1,
-                            text : 'check'
-                        },
-                        ' ',
-                        {
-                            block : 'checkbox',
-                            mods : { theme : 'islands', size : 'm', type : 'button', checked : true },
-                            val : 1,
-                            text : 'check'
-                        },
-                        ' ',
-                        {
-                            block : 'dropdown',
-                            mods : { switcher : 'button', theme : 'islands', size : 'm' },
-                            switcher : 'dropdown',
-                            popup : { block : 'popup', mods : { theme : 'islands' }, content : 'popup' }
-                        },
-                        ' ',
-                        {
-                            block : 'select',
-                            mods : { mode : 'radio-check', theme : 'islands', size : 'm' },
-                            name : 'select',
-                            text : 'first',
-                            options : [
-                                { val : 1, text : 'first', checked: true },
-                                { val : 2, text : 'second' }
-                            ]
-                        },
-                        ' ',
-                        {
-                            block : 'spin',
-                            mods : { theme : 'islands', size : 'm', visible : true }
-                        }
-                    ]
-                },
-
-                { tag : 'br' },
-
-                {
-                    block : 'line',
-                    mods : { size : 'l' },
-                    content : [
-                        'size l (32px height) ',
-                        {
-                            block : 'input',
-                            mods : { theme : 'islands', size : 'l', 'has-clear' : true },
-                            val : 'value',
-                            placeholder : 'placeholder'
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 'l' },
-                            text : 'button'
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 'l' },
-                            text : 'button',
-                            icon : { block : 'icon', mods : { action : 'download' } }
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 'l' },
-                            icon : { block : 'spin', mods : { theme : 'islands', size : 'm', visible : true } },
-                            text : 'Loading...'
-                        },
-                        ' ',
-                        {
-                            block : 'radio-group',
-                            mods : { theme : 'islands', size : 'l', type : 'button' },
-                            name : 'radio-sizes-l',
-                            options : [
-                                { val : 1, text : 'first' },
-                                { val : 2, text : 'second', checked : true }
-                            ]
-                        },
-                        ' ',
-                        {
-                            block : 'radio',
-                            mods : { theme : 'islands', size : 'l', checked : true },
-                            val : 1,
-                            text : 'radio'
-                        },
-                        ' ',
-                        {
-                            block : 'checkbox',
-                            mods : { theme : 'islands', size : 'l', checked : true },
-                            val : 1,
-                            text : 'check'
-                        },
-                        ' ',
-                        {
-                            block : 'checkbox',
-                            mods : { theme : 'islands', size : 'l', type : 'button' },
-                            val : 1,
-                            text : 'check'
-                        },
-                        ' ',
-                        {
-                            block : 'dropdown',
-                            mods : { switcher : 'button', theme : 'islands', size : 'l' },
-                            switcher : 'dropdown',
-                            popup : { block : 'popup', mods : { theme : 'islands' }, content : 'popup' }
-                        },
-                        ' ',
-                        {
-                            block : 'select',
-                            mods : { mode : 'radio-check', theme : 'islands', size : 'l' },
-                            name : 'select',
-                            text : 'first',
-                            options : [
-                                { val : 1, text : 'first', checked: true },
-                                { val : 2, text : 'second' }
-                            ]
-                        },
-                        ' ',
-                        {
-                            block : 'spin',
-                            mods : { theme : 'islands', size : 'l', visible : true }
-                        }
-                    ]
-                },
-
-                { tag : 'br' },
-
-                {
-                    block : 'line',
-                    mods : { size : 'xl' },
-                    content : [
-                        'size xl (38px height) ',
-                        {
-                            block : 'input',
-                            mods : { theme : 'islands', size : 'xl', 'has-clear' : true },
-                            val : 'value',
-                            placeholder : 'placeholder'
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 'xl' },
-                            text : 'button'
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 'xl' },
-                            text : 'button',
-                            icon : { block : 'icon', mods : { action : 'download' } }
-                        },
-                        ' ',
-                        {
-                            block : 'button',
-                            mods : { theme : 'islands', size : 'xl' },
-                            icon : { block : 'spin', mods : { theme : 'islands', size : 'l', visible : true } },
-                            text : 'Loading...'
-                        },
-                        ' ',
-                        {
-                            block : 'radio-group',
-                            mods : { theme : 'islands', size : 'xl', type : 'button' },
-                            name : 'radio-sizes-xl',
-                            options : [
-                                { val : 1, text : 'first' },
-                                { val : 2, text : 'second', checked : true }
-                            ]
-                        },
-                        ' ',
-                        {
-                            block : 'checkbox',
-                            mods : { theme : 'islands', size : 'xl', type : 'button' },
-                            val : 1,
-                            text : 'check'
-                        },
-                        ' ',
-                        {
-                            block : 'dropdown',
-                            mods : { switcher : 'button', theme : 'islands', size : 'xl' },
-                            switcher : 'dropdown',
-                            popup : { block : 'popup', mods : { theme : 'islands' }, content : 'popup' }
-                        },
-                        ' ',
-                        {
-                            block : 'select',
-                            mods : { mode : 'radio-check', theme : 'islands', size : 'xl' },
-                            name : 'select',
-                            text : 'first',
-                            options : [
-                                { val : 1, text : 'first', checked: true },
-                                { val : 2, text : 'second' }
-                            ]
-                        },
-                        ' ',
-                        {
-                            block : 'spin',
-                            mods : { theme : 'islands', size : 'xl', visible : true }
-                        }
-                    ]
+                    block: 'footer-wrapper',
+                    content: {
+                        block: 'footer',
+                        content: 'TODO'
+                    }
                 }
-            ]
-        },
-        {
-            block : 'footer',
-            content : [
-                'footer content goes here'
             ]
         }
     ]

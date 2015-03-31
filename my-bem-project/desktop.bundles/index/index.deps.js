@@ -66,558 +66,200 @@ exports.deps = [
         "elem": "js"
     },
     {
-        "block": "ua",
-        "elem": "svg"
-    },
-    {
         "block": "page",
         "elem": "meta"
+    },
+    {
+        "block": "main"
+    },
+    {
+        "block": "header-wrapper"
     },
     {
         "block": "header"
     },
     {
-        "block": "test"
+        "block": "logo"
     },
     {
-        "block": "content"
-    },
-    {
-        "block": "link"
-    },
-    {
-        "block": "link",
-        "mod": "disabled"
-    },
-    {
-        "block": "jquery",
-        "elem": "event"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointerclick"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointernative"
-    },
-    {
-        "block": "keyboard",
-        "elem": "codes"
-    },
-    {
-        "block": "control"
-    },
-    {
-        "block": "table"
-    },
-    {
-        "block": "table",
-        "elem": "row"
-    },
-    {
-        "block": "table",
-        "elem": "title"
-    },
-    {
-        "block": "table",
-        "elem": "cell"
+        "block": "logo",
+        "elem": "image"
     },
     {
         "block": "menu"
     },
     {
-        "block": "menu-item"
-    },
-    {
         "block": "menu",
-        "mod": "focused"
+        "elem": "item"
     },
     {
-        "block": "menu",
-        "elem": "group"
+        "block": "login-container"
     },
     {
-        "block": "menu",
-        "elem": "group-title"
+        "block": "login-container",
+        "elem": "login"
     },
     {
-        "block": "menu",
-        "elem": "group",
-        "mod": "has-title"
+        "block": "login-container",
+        "elem": "singup"
     },
     {
-        "block": "menu",
-        "mod": "theme"
+        "block": "article-wrapper"
     },
     {
-        "block": "menu-item",
-        "mod": "theme"
+        "block": "aside-container"
     },
     {
-        "block": "menu",
-        "mod": "size"
+        "block": "categories"
     },
     {
-        "block": "menu-item",
-        "mod": "disabled"
+        "block": "categories",
+        "elem": "header"
     },
     {
-        "block": "menu",
-        "mod": "mode"
+        "block": "category"
     },
     {
-        "block": "menu-item",
-        "mod": "checked"
+        "block": "text-widget"
     },
     {
-        "block": "icon"
+        "block": "text-widget",
+        "elem": "header"
     },
     {
-        "block": "icon",
-        "mod": "social"
+        "block": "text-widget",
+        "elem": "paragraph"
     },
     {
-        "block": "icon",
-        "mod": "social",
-        "val": "vk"
+        "block": "archives"
     },
     {
-        "block": "menu",
-        "mod": "size",
-        "val": "m"
+        "block": "archives",
+        "elem": "header"
     },
     {
-        "block": "menu",
-        "mod": "size",
-        "val": "l"
+        "block": "archives",
+        "elem": "monthyear"
     },
     {
-        "block": "menu",
-        "mod": "size",
-        "val": "xl"
+        "block": "article"
     },
     {
-        "block": "line"
+        "block": "article",
+        "elem": "header"
     },
     {
-        "block": "line",
-        "mod": "size"
+        "block": "article",
+        "elem": "extra"
     },
     {
-        "block": "input"
+        "block": "article",
+        "elem": "by"
     },
     {
-        "block": "input",
-        "mod": "0"
+        "block": "article",
+        "elem": "date"
     },
     {
-        "block": "input",
-        "mod": "1"
+        "block": "article",
+        "elem": "comments"
     },
     {
-        "block": "input",
-        "elem": "box"
+        "block": "article",
+        "elem": "promo"
     },
     {
-        "block": "input",
-        "elem": "control"
-    },
-    {
-        "block": "tick"
-    },
-    {
-        "block": "idle"
-    },
-    {
-        "block": "input",
-        "mod": "theme"
-    },
-    {
-        "block": "input",
-        "mod": "size"
-    },
-    {
-        "block": "input",
-        "mod": "has-clear"
-    },
-    {
-        "block": "input",
-        "elem": "clear"
-    },
-    {
-        "block": "button"
-    },
-    {
-        "block": "button",
-        "mod": "focused"
-    },
-    {
-        "block": "button",
-        "mod": "hovered"
-    },
-    {
-        "block": "button",
-        "mod": "disabled"
-    },
-    {
-        "block": "button",
-        "mod": "pressed"
-    },
-    {
-        "block": "button",
+        "block": "article",
         "elem": "text"
     },
     {
-        "block": "button",
-        "mod": "theme"
+        "block": "article",
+        "elem": "paragraph"
     },
     {
-        "block": "button",
-        "mod": "size"
+        "block": "article-wrapper",
+        "elem": "clear"
     },
     {
-        "block": "icon",
-        "mod": "action"
+        "block": "comments-wrapper"
     },
     {
-        "block": "spin"
+        "block": "comments-container-section"
     },
     {
-        "block": "spin",
-        "mod": "theme"
+        "block": "comments-container-section",
+        "elem": "count"
     },
     {
-        "block": "spin",
-        "mod": "size"
+        "block": "comments-form-container"
     },
     {
-        "block": "spin",
-        "mod": "visible"
+        "block": "contents-form"
     },
     {
-        "block": "radio-group"
+        "block": "contents-form",
+        "elem": "full-name"
     },
     {
-        "block": "radio"
+        "block": "contents-form",
+        "elem": "email"
     },
     {
-        "block": "radio",
-        "mod": "disabled"
+        "block": "contents-form",
+        "elem": "message"
     },
     {
-        "block": "radio",
-        "mod": "checked"
+        "block": "contents-form",
+        "elem": "submit"
     },
     {
-        "block": "radio",
-        "mod": "focused"
+        "block": "contents-form",
+        "elem": "clear"
     },
     {
-        "block": "radio",
-        "elem": "box"
+        "block": "comments-container"
     },
     {
-        "block": "radio",
-        "elem": "control"
+        "block": "comment"
     },
     {
-        "block": "radio-group",
-        "mod": "theme"
+        "block": "comment",
+        "mod": "level-0"
     },
     {
-        "block": "radio",
-        "mod": "theme"
+        "block": "comment",
+        "elem": "avatar"
     },
     {
-        "block": "button",
-        "mod": "togglable"
+        "block": "comment",
+        "elem": "profile-image"
     },
     {
-        "block": "radio-group",
-        "mod": "size"
+        "block": "comment",
+        "elem": "full-name"
     },
     {
-        "block": "radio-group",
-        "mod": "type"
+        "block": "comment",
+        "elem": "message"
     },
     {
-        "block": "radio",
-        "mod": "type"
+        "block": "comment",
+        "elem": "time"
     },
     {
-        "block": "checkbox"
+        "block": "comment",
+        "elem": "reply"
     },
     {
-        "block": "checkbox",
-        "mod": "disabled"
+        "block": "comment",
+        "elem": "clear"
     },
     {
-        "block": "checkbox",
-        "mod": "focused"
+        "block": "comment",
+        "mod": "level-1"
     },
     {
-        "block": "checkbox",
-        "mod": "checked"
-    },
-    {
-        "block": "checkbox",
-        "elem": "box"
-    },
-    {
-        "block": "checkbox",
-        "elem": "control"
-    },
-    {
-        "block": "checkbox",
-        "mod": "theme"
-    },
-    {
-        "block": "button",
-        "mod": "togglable",
-        "val": "check"
-    },
-    {
-        "block": "checkbox",
-        "mod": "size"
-    },
-    {
-        "block": "checkbox",
-        "mod": "type"
-    },
-    {
-        "block": "dropdown"
-    },
-    {
-        "block": "dropdown",
-        "elem": "switcher"
-    },
-    {
-        "block": "popup"
-    },
-    {
-        "block": "functions",
-        "elem": "throttle"
-    },
-    {
-        "block": "popup",
-        "mod": "visible"
-    },
-    {
-        "block": "popup",
-        "mod": "autoclosable"
-    },
-    {
-        "block": "popup",
-        "mod": "target"
-    },
-    {
-        "block": "dropdown",
-        "mod": "switcher"
-    },
-    {
-        "block": "dropdown",
-        "mod": "theme"
-    },
-    {
-        "block": "popup",
-        "mod": "theme"
-    },
-    {
-        "block": "dropdown",
-        "mod": "switcher",
-        "val": "link"
-    },
-    {
-        "block": "link",
-        "mod": "pseudo"
-    },
-    {
-        "block": "dropdown",
-        "mod": "size"
-    },
-    {
-        "block": "select"
-    },
-    {
-        "block": "select",
-        "mod": "focused"
-    },
-    {
-        "block": "select",
-        "elem": "control"
-    },
-    {
-        "block": "select",
-        "elem": "button"
-    },
-    {
-        "block": "select",
-        "elem": "menu"
-    },
-    {
-        "block": "strings",
-        "elem": "escape"
-    },
-    {
-        "block": "select",
-        "mod": "mode"
-    },
-    {
-        "block": "menu",
-        "mod": "mode",
-        "val": "radio-check"
-    },
-    {
-        "block": "select",
-        "mod": "theme"
-    },
-    {
-        "block": "select",
-        "mod": "size"
-    },
-    {
-        "block": "spin",
-        "mod": "size",
-        "val": "s"
-    },
-    {
-        "block": "line",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "input",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "button",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "radio-group",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "radio",
-        "mod": "size"
-    },
-    {
-        "block": "checkbox",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "dropdown",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "select",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "spin",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "line",
-        "mod": "size",
-        "val": "l"
-    },
-    {
-        "block": "input",
-        "mod": "size",
-        "val": "l"
-    },
-    {
-        "block": "button",
-        "mod": "size",
-        "val": "l"
-    },
-    {
-        "block": "radio-group",
-        "mod": "size",
-        "val": "l"
-    },
-    {
-        "block": "radio",
-        "mod": "size",
-        "val": "l"
-    },
-    {
-        "block": "checkbox",
-        "mod": "size",
-        "val": "l"
-    },
-    {
-        "block": "dropdown",
-        "mod": "size",
-        "val": "l"
-    },
-    {
-        "block": "select",
-        "mod": "size",
-        "val": "l"
-    },
-    {
-        "block": "spin",
-        "mod": "size",
-        "val": "l"
-    },
-    {
-        "block": "line",
-        "mod": "size",
-        "val": "xl"
-    },
-    {
-        "block": "input",
-        "mod": "size",
-        "val": "xl"
-    },
-    {
-        "block": "button",
-        "mod": "size",
-        "val": "xl"
-    },
-    {
-        "block": "radio-group",
-        "mod": "size",
-        "val": "xl"
-    },
-    {
-        "block": "checkbox",
-        "mod": "size",
-        "val": "xl"
-    },
-    {
-        "block": "dropdown",
-        "mod": "size",
-        "val": "xl"
-    },
-    {
-        "block": "select",
-        "mod": "size",
-        "val": "xl"
-    },
-    {
-        "block": "spin",
-        "mod": "size",
-        "val": "xl"
+        "block": "footer-wrapper"
     },
     {
         "block": "footer"
@@ -641,285 +283,17 @@ exports.deps = [
         "mod": "theme"
     },
     {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointer"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointerpressrelease"
-    },
-    {
-        "block": "menu",
-        "mod": "focused",
+        "block": "comment",
+        "mod": "level-0",
         "val": true
     },
     {
-        "block": "menu",
-        "elem": "group",
-        "mod": "has-title",
+        "block": "comment",
+        "mod": "level-1",
         "val": true
-    },
-    {
-        "block": "menu",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "menu-item",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "menu",
-        "mod": "size",
-        "val": "s"
-    },
-    {
-        "block": "menu-item",
-        "mod": "disabled",
-        "val": true
-    },
-    {
-        "block": "menu",
-        "mod": "mode",
-        "val": "check"
-    },
-    {
-        "block": "menu-item",
-        "mod": "checked",
-        "val": true
-    },
-    {
-        "block": "icon",
-        "mod": "social",
-        "val": "twitter"
-    },
-    {
-        "block": "line",
-        "mod": "size",
-        "val": "s"
-    },
-    {
-        "block": "input",
-        "mod": "0",
-        "val": "disabled"
-    },
-    {
-        "block": "input",
-        "mod": "1",
-        "val": "focused"
-    },
-    {
-        "block": "input",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "input",
-        "mod": "size",
-        "val": "s"
-    },
-    {
-        "block": "input",
-        "mod": "has-clear",
-        "val": true
-    },
-    {
-        "block": "button",
-        "mod": "focused",
-        "val": "yes"
-    },
-    {
-        "block": "button",
-        "mod": "hovered",
-        "val": "yes"
-    },
-    {
-        "block": "button",
-        "mod": "disabled",
-        "val": "yes"
-    },
-    {
-        "block": "button",
-        "mod": "pressed",
-        "val": "yes"
-    },
-    {
-        "block": "button",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "button",
-        "mod": "size",
-        "val": "s"
-    },
-    {
-        "block": "icon",
-        "mod": "action",
-        "val": "download"
-    },
-    {
-        "block": "spin",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "spin",
-        "mod": "size",
-        "val": "xs"
-    },
-    {
-        "block": "spin",
-        "mod": "visible",
-        "val": true
-    },
-    {
-        "block": "radio",
-        "mod": "disabled",
-        "val": true
-    },
-    {
-        "block": "radio",
-        "mod": "checked",
-        "val": true
-    },
-    {
-        "block": "radio",
-        "mod": "focused",
-        "val": true
-    },
-    {
-        "block": "radio-group",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "button",
-        "mod": "togglable",
-        "val": "radio"
-    },
-    {
-        "block": "radio-group",
-        "mod": "size",
-        "val": "s"
-    },
-    {
-        "block": "radio-group",
-        "mod": "type",
-        "val": "button"
-    },
-    {
-        "block": "radio",
-        "mod": "type",
-        "val": "button"
-    },
-    {
-        "block": "checkbox",
-        "mod": "disabled",
-        "val": true
-    },
-    {
-        "block": "checkbox",
-        "mod": "focused",
-        "val": true
-    },
-    {
-        "block": "checkbox",
-        "mod": "checked",
-        "val": true
-    },
-    {
-        "block": "checkbox",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "checkbox",
-        "mod": "size",
-        "val": "s"
-    },
-    {
-        "block": "checkbox",
-        "mod": "type",
-        "val": "button"
-    },
-    {
-        "block": "popup",
-        "mod": "autoclosable",
-        "val": true
-    },
-    {
-        "block": "popup",
-        "mod": "visible",
-        "val": true
-    },
-    {
-        "block": "popup",
-        "mod": "target",
-        "val": "anchor"
-    },
-    {
-        "block": "dropdown",
-        "mod": "switcher",
-        "val": "button"
-    },
-    {
-        "block": "dropdown",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "popup",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "link",
-        "mod": "pseudo",
-        "val": true
-    },
-    {
-        "block": "dropdown",
-        "mod": "size",
-        "val": "s"
-    },
-    {
-        "block": "select",
-        "mod": "focused",
-        "val": true
-    },
-    {
-        "block": "select",
-        "mod": "mode",
-        "val": "radio-check"
-    },
-    {
-        "block": "select",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "select",
-        "mod": "size",
-        "val": "s"
-    },
-    {
-        "block": "radio",
-        "mod": "size",
-        "val": "m"
     },
     {
         "block": "page",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "radio",
         "mod": "theme",
         "val": "islands"
     }
