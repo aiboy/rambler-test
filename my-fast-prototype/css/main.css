@@ -101,19 +101,19 @@ body {
     background: antiquewhite;
     margin-right: 240px;
 
-    height: 1160px;
     padding: 36px 10px 10px 10px;
     box-sizing: border-box;
 }
 .article__header {
     font-size: 28px;
 
-    margin-bottom: 6px;
     font-weight: bold;
+    line-height: 34px;
 }
 .article__extra {
     font-size: 15px;
 
+    line-height: 26px;
 }
 .article__by {
     color: green;
@@ -127,12 +127,18 @@ body {
 
 }
 .article__promo {
+    background: red;
 
+    height: 292px;
+    margin-top: 20px;
 }
 .article__text {
+    font-size: 15px;
 
+    line-height: 25px;
 }
 .article__paragraph {
+    margin: 18px 0;
 
 }
 .aside-container {
