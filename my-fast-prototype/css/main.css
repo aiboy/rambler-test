@@ -118,6 +118,7 @@ body {
 .article__by {
     color: green;
 
+    cursor: pointer;
 }
 .article__date {
 
@@ -147,34 +148,47 @@ body {
     background: aquamarine;
     width: 240px;
     height: 1160px;
-    padding: 50px 10px 10px 10px;
+    padding: 48px 10px 10px 10px;
     box-sizing: border-box;
 }
 .categories {
+    background: darkcyan;
 
+    margin-bottom: 32px;
 }
 .categories__header {
+    font-size: 20px;
 
+    font-weight: bold;
+    margin-bottom: 16px;
 }
 .category {
+    margin: 11px 0px;
 
 }
 .text-widget {
+    margin-bottom: 32px;
 
+    background: aqua;
 }
 .text-widget__header {
+    font-size: 20px;   font-weight: bold;   margin-bottom: 16px;
 
 }
 .text-widget__paragraph {
+    font-size: 15px;
     
+    line-height: 22px;
 }
 .archives {
 
 }
 .archives__header {
+    font-size: 20px;   font-weight: bold;   margin-bottom: 16px;
 
 }
 .archives__monthyear {
+    margin: 11px 0;
 
 }
 .comments-wrapper {
